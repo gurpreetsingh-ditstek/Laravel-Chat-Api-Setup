@@ -11,4 +11,9 @@ return [
     "invalidCredentials"=>"We could not log you in.
     The email and password you entered do not match with our records. 
     Please try it again or request a new password.",
+    "success"=>"Data fetched successfully",
+    "noRecordFound" =>"No Record Found",
+    "messageSaved"=>"Message saved successfully!",
+    "messageDeleted"=>"Message deleted successfully!",
+    "messageListing"=>"Messages List.",
 ];
