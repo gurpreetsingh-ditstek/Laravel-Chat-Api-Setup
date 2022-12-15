@@ -24,3 +24,11 @@ Route::namespace('Api\V1')->group(function () {
     Route::post("login", "UsersController@login");
     Route::post("loginVerifyOtp", "UsersController@loginVerifyOtp");
 });
+
+Route::namespace("Api\V1")->middleware("auth:api")->group(function () {
+    // Message APIs //
+    Route::post('chat-history', 'MessageController@chatHistory');
+    Route::post('send-message', 'MessageController@sendMessage');
+    Route::post('remove-message', 'MessageController@deleteMessage');
+    Route::post('message-listing', 'MessageController@messageListing');
+});
